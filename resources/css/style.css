@@ -10,10 +10,12 @@ html {
 
 /*--------------------------------- Header Section --- */
 
-.mobile {
+.mobile,
+.mobilelogo {
 	display: none;
 }
-.header{
+
+.header {
 	display: flex;
 	justify-content: center;
 }
@@ -48,29 +50,56 @@ ul li {
 	/*font-size: 1.2rem;*/
 }
 
-.logo img {
+.desktoplogo img {
 	height: 3rem;
 	max-width: auto;
 	display: block;
 	padding-left: 3.6875rem;
-
 }
 
 
 /*--------------------------------------- Media Queries ----*/ 
 
 @media only screen and (max-width: 570px){
-	.desktop {
-		display: none;
-	}
 
-	.mobile {
+	.header .container {
+	/*width: 66.66rem;*/
+	width: 99.9%;
+	height: 2.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	background-color: #000000;
+}
+
+.mobilelogo img {
+	height: 2rem;
+	max-width: auto;
+	display: block;
+	padding-left: .625rem;
+}
+	 
+	.desktoplogo {
+		display: none;
+	} 
+
+	.mobilelogo {
 		display: flex;
 	}
 
 	.container .logo {
 		display: none;
 	}
+
+	.mobile ul {
+	display: flex;
+	padding-right: .625rem;
+}
+
+.mobile ul li {
+	font-size: .75rem;
+}
 
 }
 

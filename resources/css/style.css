@@ -1,0 +1,127 @@
+
+/*---------------------------------- Universal Styles ----*/
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+/*--------------------------------- Header Section --- */
+
+.mobile {
+	display: none;
+}
+.header{
+	display: flex;
+	justify-content: center;
+}
+
+.header .container {
+	/*width: 66.66rem;*/
+	width: 99.9%;
+	height: 3.875rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	background-color: #000000;
+}
+
+a {
+	color: #ffffff;
+}
+
+.desktop ul {
+	display: flex;
+	padding-right: 3.4375rem;
+}
+
+ul li {
+	padding: 1rem;
+
+}
+
+.logo {
+	display: flex;
+	/*font-size: 1.2rem;*/
+}
+
+.logo img {
+	height: 3rem;
+	max-width: auto;
+	display: block;
+	padding-left: 3.6875rem;
+
+}
+
+
+/*--------------------------------------- Media Queries ----*/ 
+
+@media only screen and (max-width: 570px){
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+	}
+
+	.container .logo {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
